@@ -1,0 +1,69 @@
+$ git --help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+Estos son comandos de Git comunes que se utilizan en diversas situaciones:
+
+Iniciar un área de trabajo (ver también: tutorial de ayuda de git)
+
+   clone     Clonar un repositorio en un nuevo directorio
+   init      Crea un repositorio Git vacío o reinicializa uno existente
+
+Trabajar en el cambio actual (ver también: git help todos los días)
+ 
+  add       Agregar contenido del archivo al índice
+   mv        Mover o cambiar el nombre de un archivo, un directorio o un enlace simbólico
+   restore   Restaurar archivos del árbol de trabajo
+   rm        Eliminar archivos del árbol de trabajo y del índice
+
+Examinar el historial y el estado (ver también: revisiones de ayuda de git)
+ 
+   bisect    Utilice la búsqueda binaria para encontrar la confirmación que introdujo un error
+   diff      Muestra cambios entre confirmaciones, confirmación y árbol de trabajo, etc.
+   grep      Imprimir líneas que coincidan con un patrón
+   log       Mostrar registros de confirmación
+   show      Muestra varios tipos de objetos.
+   statu     Mostrar el estado del árbol de trabajo
+
+Haz crecer, marca y modifica tu historia común
+  
+   branch    Listar, crear o eliminar ramas
+   commit    cambios de registro en el repositorio
+   merge     Unir dos o más historias de desarrollo juntas
+   rebase    Vuelva a aplicar confirmaciones además de otra sugerencia base
+   reset     Restablece el HEAD actual al estado especificado
+   switch    cambiar ramas
+   tag       Crear, enumerar, eliminar o verificar un objeto de etiqueta firmado con GPG
+
+colaborar (ver también: flujos de trabajo de ayuda de git)
+   fetch     Descargar objetos y referencias de otro repositorio
+   pull      Obtenga e integre con otro repositorio o una sucursal local
+   push      Actualizar referencias remotas junto con los objetos asociados
+ 
+'git help -a' y 'git help -g' enumeran los subcomandos disponibles y algunos
+guías conceptuales. Consulte 'git help <comando>' o 'git help <concepto>'
+para leer sobre un subcomando o concepto específico.
+Consulte 'git help git' para obtener una descripción general del sistema.
+
+
+----------------------------------------------------------------------------------------------
+# Navega a tu repositorio local
+cd ~/Desktop/Programacion/2034-logica-programacion-1-Aula1
+
+# Inicializa el repositorio si no lo has hecho aún
+git init
+
+# Agrega todos los archivos al área de preparación
+git add .
+
+# Realiza un commit
+git commit -m "Primer commit"
+
+# Añade el repositorio remoto
+git remote add origin https://github.com/tu-usuario/nombre-del-repositorio.git
+
+# Empuja los cambios a GitHub
+git push -u origin master  # o 'main' si es el caso
